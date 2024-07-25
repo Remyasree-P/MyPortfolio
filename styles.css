@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding: 10px;
+    margin: 0px 20px;
+}
+.main{
+    padding: 20px 20px;
+    max-width: 100%;
+    /* border: 1px solid black; */
+    /* margin: 10px; */
+    background: rgb(239, 244, 181);
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+img{
+    width: 100%;
+}
+p{
+    color: rgb(85,85,85);
+}
+/* Transition */
+a,.btn{
+    transition: all 300ms ease;
+}
+/* Desktop nav */
+nav,.nav-links{
+    display: flex;
+}
+nav{
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+.nav-links{
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+a{
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+    text-underline-offset: 1rem;
+}
+a:hover{
+    color: gray;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color:rgb(101, 101, 101);
+}
+.logo{
+    font-size: 2rem;
+}
+.logo.logo:hover{
+    cursor:default;
+}
+/* Humburger-menu */
+.humbarger-nav{
+    display: none;
+}
+.hamburger-menu{
+    position: relative;
+    display: inline-block;
+}
+.hamburger-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+.hamburger-icon span{
+    width: 100%;
+    height:2px ;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+}
+.menu-links{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+.menu-links a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+.menu-links li{
+    list-style: none;
+}
+.menu-links.open{
+    max-height: 300px;
+}
+.hamburger-icon.open span:first-child{
+    transform: rotate(45deg)translate(10px,5px);
+}
+.hamburger-icon.open span:nth-child(2){
+    opacity: 0;
+}
+.hamburger-icon.open span:last-child{
+    transform: rotate(-45deg)translate(10px,-5px);
+} 
+.hamburger-icon span:first-child{
+    transform: none;
+}
+.hamburger-icon span:first-child{
+  opacity: 1;
+}
+.hamburger-icon span:first-child{
+    transform: none;
+}
+/* icon */
+.icon{
+    cursor: pointer;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50px;
+    
+}
+/* profile */
+.profile{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 20px;
+}
+.profile .photo img{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+}
+.profile .social-container img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.btn-container button{
+    border-radius: 15px;
+    padding: 10px;
+    margin:10px auto;
+    border: none;
+    font-weight: bold;
+    margin-right: 10px;
+    background-color: rgb(77, 72, 72);
+    color: white;
+}
+.btn-container button:hover{
+    cursor: pointer;
+    background-color: gray;
+    
+}
+/* about */
+.about-container{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    gap: 2rem;
+
+}
+.first{
+    padding: 10px;
+    border-radius: 15px;
+    max-width: 32rem;
+    /* border: 1px solid black; */
+
+}
+.section-title{
+    text-align: center;
+}
+.title{
+    text-align: center;
+}
+
+/* experience */
+.experience-container{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* projects */
+
+.projImg{
+    height: 200px;
+    width: 200px;
+    margin: 2rem 0;
+    border-radius: 50%;
+}
+.subProjects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    margin-top: 2rem;
+}
+.firstProject{
+    /* border: 1px solid black; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.buttons button{
+    padding: 15px;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 5px;
+    margin-left: 10px;
+    font-weight: 700;
+    border: none;
+    background-color: rgb(156, 156, 156);
+}
+.buttons button:hover{
+    background-color: rgb(48, 45, 45);
+    color: white;
+}
+.contact{
+    height: 40vh;
+}
+.contact-details{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:center;
+    gap: 2rem;
+}

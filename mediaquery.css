@@ -1,0 +1,33 @@
+@media screen and (max-width:1200px) {
+    .desktop-nav{
+        display: none;
+    }
+    .humbarger-nav{
+        display: flex;
+    }
+   
+}
+@media (max-width:600px){
+    .profile{
+        flex-direction: column;
+    }
+    .about-container{
+        flex-direction: column;
+    }
+    .experience-container{
+        flex-direction: column;
+    }
+    .first{
+        border: 1px solid none;
+    }
+    .contact-details{
+        flex-direction: column;
+        align-items: baseline;
+    }
+   
+}
+@media(max-width:875px){
+    .subProjects{
+        flex-direction: column;
+    }
+}

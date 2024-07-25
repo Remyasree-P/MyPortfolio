@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaquery.css">
+</head>
+<body>
+    <nav class="main desktop-nav">
+        <div class="logo">Remyasree P</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="main humbarger-nav">
+        <div class="logo">Remyasree P</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <div class="main profile">
+        <div class="photo">
+            <img src="./Images/profile.jpg" alt="">
+        </div>
+        <div class="content">
+            <p>Hello I'm</p>
+            <h2>Remyasree P</h2>
+            <p>Java Full Stack Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./Images/Resume.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div class="social-container">
+                <img src="./Images/linkedln-logo.webp" alt="My linkedln profile" class="icon" onclick="location.href='https://www.linkedin.com/in/remyasree-p'">
+                <img src="./Images/gitHub.png" alt="My GitHub profile" class="icon" onclick="location.href='https://github.com/Remyasree-P'">
+            </div>
+        </div>
+    </div>
+    <div  id="about" class="main about">
+        <p class="section-title">Get to Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="about-container">
+            <div class="first">
+                <img src="./Images/experience.png" alt="" class="icon">
+                <h3 class="heading">Experience</h3>
+                <p>Java Full Stack Developer</p>
+                <p>Jspiders-Training and Development Center,Bangalore</p>
+                <br>
+                <p>Intern-Virtual Reality</p>
+                <p>Infox Technologies,Kochi</p>
+                <br>
+                <p>Intern</p>
+                <p>Kerala Development and Innovation Strategic Council
+                    (K-DISC) partnered by ICT Academy of Kerala in 2021.</p>
+            </div>
+            <div class="first">
+                    <img src="./Images/education.png" alt="Education Icon" class="icon">
+                    <h3>Education</h3>
+                    <!-- <p>Bachelor of Technology</p> -->
+                    <p>Bachelor of Technology in Electronics and Communication Engineering with Minor in Computer Science and Engineering</p>
+                    <p>LBS College of Engineering Kasaragod.</p>
+                    <p>CGPA:7.3</p>
+                    <br>
+                    <p>12th,Chattanchal Higher Secondary School.</p>
+                    <p>92%</p>
+                    <br>
+                    <p>10th,Chattanchal Higher Secondary School.</p>
+                    <p>95%</p>
+            </div>
+        </div>
+       
+    </div>
+    <div id="experience" class="main expeience">
+        <p class="section-title">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-container">
+            <div class="first">
+                <h3 class="heading">Frontend Development</h3>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JavaScript</p>
+                <p>React JS</p>
+            </div>
+            <div class="first">
+                    <h3>Backend Development</h3>
+                    <p>Java</p>
+                    <p>SQL</p>
+            </div>
+        </div>
+    </div>
+    <div id="projects" class="main projects">
+        <p class="section-title">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="subProjects">
+            <div class="firstProject">
+                <img src="./Images/BusReservationSystem.png" alt="" class="projImg">
+                <div class="buttons">
+                    <button class="btn1" onclick="location.href='https://github.com/Remyasree-P/Bus-Reservation-System'">GitHub</button>
+                    <button class="btn2" onclick="window.open()">Live Demo</button>
+                </div>
+            </div>
+            <div class="firstProject">
+                <img src="./Images/calculator.jpeg" alt="" class="projImg">
+                <div class="buttons">
+                    <button class="btn1" onclick="location.href='https://github.com/Remyasree-P/Calculator'">GitHub</button>
+                    <button class="btn2" onclick="window.open('./Images/calculator.webm')">Live Demo</button>
+                </div>
+            </div>
+            <div class="firstProject">
+                <img src="./Images/digitalClock.png" alt="" class="projImg">
+                <div class="buttons">
+                    <button class="btn1" onclick="location.href='https://github.com/Remyasree-P/DigitalClock'">GitHub</button>
+                    <button class="btn2" onclick="window.open('./Images/digitalclock.webm')">Live Demo</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="subProjects">
+            <div class="firstProject">
+                <img src="./Images/rockpaperscissor.png" alt="" class="projImg">
+                <div class="buttons">
+                    <button class="btn1" onclick="location.href='https://github.com/Remyasree-P/Bus-Reservation-System'">GitHub</button>
+                    <button class="btn2" onclick="window.open('./Images/rockpaper.webm')">Live Demo</button>
+                </div>
+            </div>
+            <div class="firstProject">
+                <img src="./Images/stopwatch.png" alt="" class="projImg">
+                <div class="buttons">
+                    <button class="btn1" onclick="location.href='https://github.com/Remyasree-P/Stopwatch'">GitHub</button>
+                    <button class="btn2" onclick="window.open('./Images/stopwatch.webm')">Live Demo</button>
+                </div>
+            </div>
+            <div class="firstProject">
+                <img src="./Images/digitalClock.png" alt="" class="projImg">
+                <div class="buttons">
+                    <button class="btn1" onclick="location.href='https://github.com/Remyasree-P/Weather'">GitHub</button>
+                    <button class="btn2" onclick="window.open()">Live Demo</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="contact" class="main contact">
+        <h1 class="section-title">Get in Touch</h1>
+        <div class="contact-details">
+            <p>Email: <a href="">remyasreep001@gmail.com</a></p>
+            <p>📞 +91 8547173347</p>
+            <p>📞 +91 7012523292</p>
+        </div> 
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
