@@ -175,7 +175,7 @@ a:hover{
     flex-direction: row;
     align-items: baseline;
     justify-content: center;
-    gap: 2rem;
+    gap: 3rem;
 
 }
 .first{
@@ -198,7 +198,7 @@ a:hover{
     flex-direction: row;
     align-items: baseline;
     justify-content: center;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 /* projects */
@@ -239,7 +239,7 @@ a:hover{
     color: white;
 }
 .contact{
-    height: 40vh;
+    height: 30vh;
 }
 .contact-details{
     margin-top: 20px;
@@ -247,5 +247,5 @@ a:hover{
     flex-direction: row;
     align-items:center;
     justify-content:center;
-    gap: 2rem;
+    gap: 3rem;
 }
